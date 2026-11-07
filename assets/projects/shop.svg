@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="فروشگاه پوشاک آنلاین">
+  <defs>
+    <linearGradient id="sBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f4f1ea"/>
+      <stop offset="100%" stop-color="#e9e4d9"/>
+    </linearGradient>
+    <linearGradient id="sCard1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dcd6c9"/>
+      <stop offset="100%" stop-color="#cfc7b7"/>
+    </linearGradient>
+    <linearGradient id="sCard2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#cdd3d0"/>
+      <stop offset="100%" stop-color="#b9c2be"/>
+    </linearGradient>
+    <linearGradient id="sCard3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e3d3cd"/>
+      <stop offset="100%" stop-color="#d3bdb4"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sBg)"/>
+
+  <!-- header -->
+  <rect width="800" height="72" fill="#ffffff" opacity=".72"/>
+  <circle cx="52" cy="36" r="16" fill="#d32f2f"/>
+  <rect x="78" y="30" width="58" height="12" rx="6" fill="#26222a"/>
+  <g fill="#6f6a63">
+    <rect x="600" y="32" width="44" height="8" rx="4"/>
+    <rect x="536" y="32" width="44" height="8" rx="4"/>
+    <rect x="472" y="32" width="44" height="8" rx="4"/>
+  </g>
+  <circle cx="712" cy="36" r="13" fill="none" stroke="#26222a" stroke-width="2"/>
+  <circle cx="748" cy="36" r="15" fill="#26222a"/>
+  <circle cx="748" cy="36" r="5" fill="#d32f2f"/>
+
+  <!-- hero strip -->
+  <rect x="40" y="100" width="330" height="212" rx="20" fill="#26222a"/>
+  <text x="342" y="168" text-anchor="end" font-family="Verdana, sans-serif" font-size="26" font-weight="bold" fill="#ffffff">کالکشن پاییز</text>
+  <text x="342" y="202" text-anchor="end" font-family="Verdana, sans-serif" font-size="18" fill="#c9c3ba">تا ۳۰٪ تخفیف</text>
+  <rect x="248" y="230" width="94" height="34" rx="12" fill="#d32f2f"/>
+  <rect x="266" y="243" width="58" height="8" rx="4" fill="#ffffff" opacity=".85"/>
+
+  <!-- tall product -->
+  <rect x="390" y="100" width="180" height="212" rx="20" fill="url(#sCard1)"/>
+  <path d="M455 128 l25 0 22 26 -14 22 -10 -8 v72 h-46 v-72 l-10 8 -14 -22 z" fill="#f6f2e9" opacity=".95"/>
+  <rect x="390" y="286" width="180" height="26" rx="0" fill="#000000" opacity=".06"/>
+  <rect x="410" y="326" width="92" height="9" rx="4.5" fill="#3a342e"/>
+  <rect x="410" y="344" width="54" height="8" rx="4" fill="#8b8377"/>
+
+  <!-- side product -->
+  <rect x="590" y="100" width="170" height="212" rx="20" fill="url(#sCard2)"/>
+  <path d="M646 134 h58 a10 10 0 0 1 10 10 v60 a10 10 0 0 1 -10 10 h-58 a10 10 0 0 1 -10 -10 v-60 a10 10 0 0 1 10 -10 z" fill="#f7f4ed" opacity=".92"/>
+  <path d="M636 148 q25 -16 50 0" stroke="#c9c3b8" stroke-width="4" fill="none"/>
+  <rect x="610" y="326" width="86" height="9" rx="4.5" fill="#3a342e"/>
+  <rect x="610" y="344" width="46" height="8" rx="4" fill="#8b8377"/>
+
+  <!-- product grid row -->
+  <g>
+    <rect x="40" y="376" width="230" height="188" rx="20" fill="#ffffff"/>
+    <rect x="56" y="392" width="198" height="106" rx="14" fill="url(#sCard3)"/>
+    <path d="M136 414 l18 0 14 18 -10 14 -7 -6 v44 h-30 v-44 l-7 6 -10 -14 z" fill="#fdf8f1" opacity=".95"/>
+    <rect x="56" y="514" width="104" height="10" rx="5" fill="#2c2722"/>
+    <rect x="56" y="534" width="60" height="8" rx="4" fill="#9a9287"/>
+    <rect x="196" y="510" width="58" height="26" rx="10" fill="#26222a"/>
+  </g>
+  <g>
+    <rect x="285" y="376" width="230" height="188" rx="20" fill="#ffffff"/>
+    <rect x="301" y="392" width="198" height="106" rx="14" fill="url(#sCard1)"/>
+    <path d="M382 416 h36 l16 16 -12 16 -8 -7 v38 h-28 v-38 l-8 7 -12 -16 z" fill="#f6f2e9" opacity=".95"/>
+    <rect x="301" y="514" width="120" height="10" rx="5" fill="#2c2722"/>
+    <rect x="301" y="534" width="66" height="8" rx="4" fill="#9a9287"/>
+    <rect x="441" y="510" width="58" height="26" rx="10" fill="#26222a"/>
+  </g>
+  <g>
+    <rect x="530" y="376" width="230" height="188" rx="20" fill="#ffffff"/>
+    <rect x="546" y="392" width="198" height="106" rx="14" fill="url(#sCard2)"/>
+    <path d="M625 414 h44 v46 h-44 z" fill="#f7f4ed" opacity=".9"/>
+    <path d="M631 414 q16 -14 32 0" stroke="#b9b1a4" stroke-width="4" fill="none"/>
+    <rect x="546" y="514" width="96" height="10" rx="5" fill="#2c2722"/>
+    <rect x="546" y="534" width="58" height="8" rx="4" fill="#9a9287"/>
+    <rect x="686" y="510" width="58" height="26" rx="10" fill="#d32f2f"/>
+  </g>
+</svg>

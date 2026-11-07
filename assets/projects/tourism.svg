@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="وب‌سایت گردشگری">
+  <defs>
+    <linearGradient id="tSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f7b267"/>
+      <stop offset="45%" stop-color="#f4845f"/>
+      <stop offset="100%" stop-color="#3f3d7a"/>
+    </linearGradient>
+    <linearGradient id="tWater" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2f4858"/>
+      <stop offset="100%" stop-color="#16232e"/>
+    </linearGradient>
+    <linearGradient id="tFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#101418" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#101418" stop-opacity=".72"/>
+    </linearGradient>
+    <clipPath id="tClip"><rect width="800" height="600" rx="0"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#tClip)">
+    <!-- scenery -->
+    <rect width="800" height="380" fill="url(#tSky)"/>
+    <circle cx="200" cy="286" r="42" fill="#fff2c4" opacity=".95"/>
+    <path d="M0 300 L120 196 L210 268 L300 178 L420 300 Z" fill="#6b4a63" opacity=".55"/>
+    <path d="M180 320 L320 208 L430 300 L520 226 L640 320 Z" fill="#4c3a52" opacity=".7"/>
+    <rect y="316" width="800" height="64" fill="url(#tWater)"/>
+    <path d="M0 380 L800 380 L800 600 L0 600 Z" fill="#12161b"/>
+
+    <!-- overlay -->
+    <rect y="250" width="800" height="350" fill="url(#tFade)"/>
+
+    <!-- nav -->
+    <rect x="640" y="34" width="74" height="26" rx="13" fill="#ffffff" opacity=".22"/>
+    <rect x="556" y="34" width="66" height="26" rx="13" fill="#ffffff" opacity=".14"/>
+    <rect x="472" y="34" width="66" height="26" rx="13" fill="#ffffff" opacity=".14"/>
+    <circle cx="60" cy="47" r="15" fill="#ffffff" opacity=".9"/>
+    <rect x="84" y="41" width="66" height="11" rx="5.5" fill="#ffffff" opacity=".85"/>
+
+    <!-- hero copy -->
+    <text x="742" y="212" text-anchor="end" font-family="Verdana, sans-serif" font-size="34" font-weight="bold" fill="#ffffff">سفر بعدی‌ات</text>
+    <text x="742" y="252" text-anchor="end" font-family="Verdana, sans-serif" font-size="34" font-weight="bold" fill="#ffd9a0">از همین‌جا شروع می‌شود</text>
+    <rect x="576" y="272" width="166" height="9" rx="4.5" fill="#ffffff" opacity=".5"/>
+
+    <!-- search bar -->
+    <rect x="392" y="306" width="350" height="62" rx="18" fill="#ffffff" opacity=".97"/>
+    <g fill="#8b8f96">
+      <rect x="602" y="322" width="54" height="8" rx="4"/>
+      <rect x="602" y="338" width="88" height="7" rx="3.5" opacity=".6"/>
+      <rect x="492" y="322" width="54" height="8" rx="4"/>
+      <rect x="492" y="338" width="70" height="7" rx="3.5" opacity=".6"/>
+      <rect x="414" y="322" width="54" height="8" rx="4"/>
+      <rect x="414" y="338" width="62" height="7" rx="3.5" opacity=".6"/>
+    </g>
+    <rect x="408" y="332" width="1" height="22" fill="#e6e6e1"/>
+    <rect x="486" y="332" width="1" height="22" fill="#e6e6e1"/>
+    <rect x="680" y="316" width="52" height="42" rx="13" fill="#d32f2f"/>
+    <circle cx="703" cy="333" r="6" fill="none" stroke="#fff" stroke-width="2.4"/>
+    <path d="M708 338l6 6" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
+
+    <!-- bottom cards -->
+    <rect x="40" y="404" width="720" height="164" rx="22" fill="#171c23" stroke="#242b35"/>
+    <g>
+      <rect x="596" y="424" width="140" height="124" rx="16" fill="#20262f"/>
+      <rect x="596" y="424" width="140" height="70" rx="16" fill="#2b4a5f"/>
+      <circle cx="621" cy="450" r="9" fill="#f7b267" opacity=".9"/>
+      <path d="M596 494 L640 470 L676 486 L736 458 L736 494 Z" fill="#1d3340"/>
+      <rect x="612" y="506" width="86" height="8" rx="4" fill="#4a5464"/>
+      <rect x="612" y="522" width="58" height="7" rx="3.5" fill="#333c49"/>
+      <rect x="612" y="536" width="34" height="7" rx="3.5" fill="#d32f2f" opacity=".7"/>
+    </g>
+    <g>
+      <rect x="432" y="424" width="140" height="124" rx="16" fill="#20262f"/>
+      <rect x="432" y="424" width="140" height="70" rx="16" fill="#3f6b52"/>
+      <circle cx="457" cy="450" r="9" fill="#d7f0c9" opacity=".9"/>
+      <path d="M432 492 L474 462 L512 484 L572 452 L572 494 Z" fill="#254034"/>
+      <rect x="448" y="506" width="86" height="8" rx="4" fill="#4a5464"/>
+      <rect x="448" y="522" width="58" height="7" rx="3.5" fill="#333c49"/>
+      <rect x="448" y="536" width="34" height="7" rx="3.5" fill="#d32f2f" opacity=".7"/>
+    </g>
+    <g>
+      <rect x="268" y="424" width="140" height="124" rx="16" fill="#20262f"/>
+      <rect x="268" y="424" width="140" height="70" rx="16" fill="#5b4166"/>
+      <circle cx="293" cy="450" r="9" fill="#f4c2c2" opacity=".9"/>
+      <path d="M268 492 L310 464 L348 482 L408 456 L408 494 Z" fill="#382b41"/>
+      <rect x="284" y="506" width="86" height="8" rx="4" fill="#4a5464"/>
+      <rect x="284" y="522" width="58" height="7" rx="3.5" fill="#333c49"/>
+      <rect x="284" y="536" width="34" height="7" rx="3.5" fill="#d32f2f" opacity=".7"/>
+    </g>
+    <rect x="64" y="428" width="112" height="10" rx="5" fill="#39424f"/>
+    <rect x="64" y="448" width="164" height="8" rx="4" fill="#2a313c"/>
+    <rect x="64" y="466" width="140" height="8" rx="4" fill="#2a313c"/>
+    <rect x="64" y="502" width="88" height="30" rx="10" fill="#d32f2f"/>
+  </g>
+</svg>
