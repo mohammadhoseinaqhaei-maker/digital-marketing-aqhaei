@@ -398,18 +398,6 @@ button {
   padding: 34px 0 72px;
 }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 40px;
-  inset-inline-start: -140px;
-  width: 420px;
-  height: 420px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(214, 68, 106, 0.08), transparent 68%);
-  pointer-events: none;
-}
-
 .hero__grid {
   position: relative;
   display: grid;
@@ -422,24 +410,11 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 18px;
-  font-size: 13.5px;
+  margin-bottom: 16px;
+  font-size: 13px;
   font-weight: 500;
   color: var(--pink);
-  letter-spacing: 0.2px;
-}
-
-.eyebrow__line {
-  display: inline-block;
-  width: 26px;
-  height: 1.5px;
-  border-radius: 2px;
-  background: var(--pink);
-  opacity: 0.7;
-}
-
-.eyebrow--center {
-  justify-content: center;
+  letter-spacing: 0.1px;
 }
 
 .hero h1 {
@@ -513,37 +488,31 @@ button {
   width: 100%;
   height: clamp(420px, 60vh, 580px);
   object-fit: cover;
-  object-position: center 22%;
+  object-position: center 18%;
 }
 
-.hero__badge {
+.hero__caption {
   position: absolute;
-  inset-inline-start: -26px;
-  bottom: 34px;
+  inset-inline-start: -22px;
+  bottom: 26px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 2px;
-  width: 116px;
-  height: 116px;
-  border-radius: 50%;
+  padding: 13px 20px;
+  border-radius: var(--radius);
   background: #fff;
   box-shadow: var(--shadow-md);
-  text-align: center;
+  line-height: 1.55;
 }
 
-.hero__badge strong {
-  font-size: 25px;
-  font-weight: 700;
-  color: var(--pink);
-  line-height: 1.2;
+.hero__caption strong {
+  font-size: 14px;
+  font-weight: 600;
 }
 
-.hero__badge span {
-  font-size: 10.5px;
+.hero__caption span {
+  font-size: 11.5px;
   color: var(--muted);
-  line-height: 1.5;
 }
 
 /* ---------- نوار مزیت‌ها ---------- */
@@ -1161,12 +1130,11 @@ button {
     height: 420px;
   }
 
-  .hero__badge {
+  .hero__caption {
     inset-inline-start: auto;
-    inset-inline-end: 18px;
-    bottom: 18px;
-    width: 96px;
-    height: 96px;
+    inset-inline-end: 16px;
+    bottom: 16px;
+    padding: 10px 16px;
   }
 
   .hero__lead {
@@ -1269,6 +1237,10 @@ button {
 
   .hero h1 {
     font-size: 27px;
+  }
+
+  .hero__figure {
+    border-radius: 110px 110px var(--radius-lg) var(--radius-lg);
   }
 
   .hero__figure img {
