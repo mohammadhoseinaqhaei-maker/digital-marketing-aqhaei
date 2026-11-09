@@ -60,7 +60,7 @@ chips.forEach((chip) => {
 
 /* ---------- نمایش تدریجی بخش‌ها ---------- */
 const revealTargets = document.querySelectorAll(
-  '.hero__content > *, .hero__media, .features, .feature, .service-card, .gallery__item, .step, .cta__inner'
+  '.hero__content > *, .hero__media, .features, .feature, .service-card, .gallery__item, .step, .cta__inner, .testimonial, .service-detail__card, .stat, .value-card, .team-card, .price-card, .package, .info-card, .booking-form, .story__figure'
 );
 
 revealTargets.forEach((el) => el.classList.add('reveal'));
@@ -83,4 +83,32 @@ if ('IntersectionObserver' in window) {
   });
 } else {
   revealTargets.forEach((el) => el.classList.add('is-visible'));
+}
+
+/* ---------- فرم درخواست نوبت ---------- */
+const bookingForm = document.getElementById('bookingForm');
+const formSuccess = document.getElementById('formSuccess');
+
+if (bookingForm && formSuccess) {
+  const summary = formSuccess.querySelector('[data-summary]');
+
+  bookingForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    if (!bookingForm.checkValidity()) {
+      bookingForm.reportValidity();
+      return;
+    }
+
+    const data = new FormData(bookingForm);
+    const service = bookingForm.service;
+    const serviceText = service.options[service.selectedIndex].text;
+
+    if (summary) {
+      summary.textContent = `${data.get('name')}، درخواست شما برای «${serviceText}» ثبت شد.`;
+    }
+
+    formSuccess.classList.add('is-visible');
+    bookingForm.reset();
+    formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  });
 }

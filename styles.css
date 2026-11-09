@@ -1353,3 +1353,828 @@ button {
     transform: none;
   }
 }
+
+/* =========================================================
+   صفحه‌های داخلی و اجزای تکمیلی
+   ========================================================= */
+
+/* ---------- سربرگ صفحه‌های داخلی ---------- */
+.page-hero {
+  padding: 58px 0 54px;
+  border-bottom: 1px solid var(--line);
+  background: radial-gradient(120% 150% at 80% -30%, #fff 0%, var(--pink-soft) 60%, #fff 100%);
+  text-align: center;
+}
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+.breadcrumb a {
+  transition: color 0.3s var(--ease);
+}
+
+.breadcrumb a:hover {
+  color: var(--pink);
+}
+
+.breadcrumb span {
+  opacity: 0.5;
+}
+
+.page-hero h1 {
+  font-size: clamp(26px, 3vw, 42px);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.4;
+}
+
+.page-hero .section__lead {
+  max-width: 620px;
+  margin-inline: auto;
+}
+
+/* ---------- روایت و تصویر ---------- */
+.story {
+  display: grid;
+  grid-template-columns: 1fr 0.92fr;
+  align-items: center;
+  gap: 48px;
+}
+
+.story__text h2 {
+  font-size: clamp(22px, 2.4vw, 32px);
+  font-weight: 700;
+}
+
+.story__text p {
+  margin-top: 16px;
+  font-size: 14.8px;
+  line-height: 2.1;
+  color: var(--muted);
+}
+
+.story__figure {
+  margin: 0;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.story__figure img {
+  width: 100%;
+  height: clamp(320px, 46vh, 440px);
+  object-fit: cover;
+}
+
+/* ---------- نظرات مشتریان ---------- */
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 28px 26px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.testimonial__stars {
+  display: flex;
+  gap: 4px;
+  color: var(--pink);
+}
+
+.testimonial__stars svg {
+  width: 15px;
+  height: 15px;
+}
+
+.testimonial p {
+  font-size: 13.8px;
+  line-height: 2.05;
+  color: var(--ink-soft);
+}
+
+.testimonial__author {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-top: auto;
+  font-size: 13.5px;
+  font-weight: 500;
+}
+
+.testimonial__avatar {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  flex: none;
+  border-radius: 50%;
+  background: var(--pink-soft);
+  color: var(--pink);
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.testimonial__author em {
+  display: block;
+  font-style: normal;
+  font-size: 11.5px;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+/* ---------- خدمات تفصیلی ---------- */
+.service-detail {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.service-detail__card {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 30px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease),
+    border-color 0.4s var(--ease);
+}
+
+.service-detail__card:hover {
+  transform: translateY(-4px);
+  border-color: var(--pink-line);
+  box-shadow: var(--shadow-md);
+}
+
+.service-detail__icon {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  flex: none;
+  border-radius: 50%;
+  background: var(--pink-soft);
+  color: var(--pink);
+}
+
+.service-detail__icon svg {
+  width: 30px;
+  height: 30px;
+}
+
+.service-detail__card h3 {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.service-detail__card > div > p {
+  margin-top: 7px;
+  font-size: 13.5px;
+  line-height: 1.95;
+  color: var(--muted);
+}
+
+.service-detail__list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 13px;
+}
+
+.service-detail__list li {
+  position: relative;
+  padding-inline-start: 15px;
+  font-size: 12.8px;
+  color: var(--ink-soft);
+}
+
+.service-detail__list li::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0.72em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--pink);
+  opacity: 0.6;
+}
+
+/* ---------- آمار ---------- */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  padding: 34px 28px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+}
+
+.stat strong {
+  display: block;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--pink);
+  line-height: 1.4;
+}
+
+.stat span {
+  font-size: 12.8px;
+  color: var(--muted);
+}
+
+/* ---------- ارزش‌ها ---------- */
+.values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.value-card {
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+}
+
+.value-card__icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--pink-soft);
+  color: var(--pink);
+}
+
+.value-card__icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.value-card h3 {
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.value-card p {
+  margin-top: 8px;
+  font-size: 13.2px;
+  line-height: 1.95;
+  color: var(--muted);
+}
+
+/* ---------- تیم ---------- */
+.team {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.team-card {
+  padding: 30px 26px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  text-align: center;
+}
+
+.team-card__avatar {
+  display: grid;
+  place-items: center;
+  width: 76px;
+  height: 76px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background: var(--pink-soft);
+  color: var(--pink);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.team-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.team-card em {
+  display: block;
+  margin-top: 2px;
+  font-style: normal;
+  font-size: 12.5px;
+  color: var(--pink);
+}
+
+.team-card p {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 1.95;
+  color: var(--muted);
+}
+
+/* ---------- تعرفه‌ها ---------- */
+.price-groups {
+  display: grid;
+  gap: 22px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.price-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.price-card__head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 24px;
+  background: var(--pink-soft);
+  color: var(--pink-dark);
+}
+
+.price-card__head svg {
+  width: 22px;
+  height: 22px;
+}
+
+.price-card__head h3 {
+  font-size: 15.5px;
+  font-weight: 600;
+}
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.price-table td {
+  padding: 14px 24px;
+  border-top: 1px solid var(--line);
+  font-size: 13.5px;
+  vertical-align: top;
+}
+
+.price-table td:first-child {
+  color: var(--ink);
+}
+
+.price-table td:last-child {
+  text-align: end;
+  white-space: nowrap;
+  font-weight: 600;
+  color: var(--pink);
+}
+
+.price-table small {
+  display: block;
+  margin-top: 3px;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.packages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 34px;
+}
+
+.package {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 26px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+}
+
+.package h3 {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.package__price {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--pink);
+}
+
+.package__price small {
+  font-size: 12.5px;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.package ul {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-top: 18px;
+  margin-bottom: 24px;
+}
+
+.package li {
+  position: relative;
+  padding-inline-start: 20px;
+  font-size: 13px;
+  line-height: 1.85;
+  color: var(--ink-soft);
+}
+
+.package li::before {
+  content: "✓";
+  position: absolute;
+  inset-inline-start: 0;
+  color: var(--pink);
+  font-size: 12px;
+}
+
+.package .btn {
+  margin-top: auto;
+}
+
+.package--featured {
+  background: var(--pink);
+  border-color: var(--pink);
+  color: #fff;
+  box-shadow: var(--shadow-md);
+}
+
+.package--featured .package__price,
+.package--featured .package__price small,
+.package--featured li {
+  color: #fff;
+}
+
+.package--featured li::before {
+  color: #ffd9e2;
+}
+
+.package--featured .btn {
+  background: #fff;
+  color: var(--pink);
+}
+
+/* ---------- پرسش‌های متداول ---------- */
+.faq {
+  display: grid;
+  gap: 12px;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.faq details {
+  padding: 16px 22px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  transition: border-color 0.3s var(--ease);
+}
+
+.faq details[open] {
+  border-color: var(--pink-line);
+}
+
+.faq summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 14.5px;
+  font-weight: 500;
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq summary::after {
+  content: "+";
+  color: var(--pink);
+  font-size: 20px;
+  line-height: 1;
+}
+
+.faq details[open] summary::after {
+  content: "−";
+}
+
+.faq p {
+  margin-top: 10px;
+  font-size: 13.5px;
+  line-height: 2;
+  color: var(--muted);
+}
+
+/* ---------- صفحه تماس ---------- */
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  align-items: start;
+  gap: 28px;
+}
+
+.contact-cards {
+  display: grid;
+  gap: 14px;
+}
+
+.info-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 20px 22px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.info-card__icon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  flex: none;
+  border-radius: 50%;
+  background: var(--pink-soft);
+  color: var(--pink);
+}
+
+.info-card__icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.info-card h3 {
+  font-size: 14.5px;
+  font-weight: 600;
+}
+
+.info-card p,
+.info-card a {
+  margin-top: 4px;
+  font-size: 13px;
+  line-height: 1.95;
+  color: var(--muted);
+}
+
+.info-card a:hover {
+  color: var(--pink);
+}
+
+.booking-form {
+  padding: 30px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.booking-form h2 {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.booking-form > p {
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field--full {
+  grid-column: 1 / -1;
+}
+
+.field label {
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--bg);
+  font: inherit;
+  font-size: 13.5px;
+  color: var(--ink);
+  transition: border-color 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+
+.field textarea {
+  min-height: 104px;
+  resize: vertical;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--pink);
+  box-shadow: 0 0 0 3px rgba(214, 68, 106, 0.13);
+}
+
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.form-note {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.form-success {
+  display: none;
+  margin-top: 16px;
+  padding: 16px 18px;
+  border: 1px solid var(--pink-line);
+  border-radius: var(--radius);
+  background: var(--pink-soft);
+  font-size: 13.5px;
+  line-height: 1.95;
+  color: var(--pink-dark);
+}
+
+.form-success.is-visible {
+  display: block;
+}
+
+.map-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-top: 28px;
+  padding: 26px 28px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(120deg, #fff 0%, var(--pink-soft) 100%);
+}
+
+.map-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.map-card p {
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* ---------- گالری نمونه‌کارها ---------- */
+.gallery--portfolio {
+  grid-auto-rows: 240px;
+}
+
+.gallery--portfolio .gallery__item::after {
+  opacity: 1;
+  background: linear-gradient(180deg, rgba(34, 34, 34, 0) 42%, rgba(34, 34, 34, 0.62) 100%);
+}
+
+.gallery--portfolio .gallery__caption {
+  opacity: 1;
+  transform: none;
+}
+
+/* ---------- واکنش‌گرایی صفحه‌های داخلی ---------- */
+@media (max-width: 1080px) {
+  .nav__list {
+    gap: 16px;
+  }
+
+  .nav__list a {
+    font-size: 14px;
+  }
+
+  .story {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .testimonials,
+  .service-detail,
+  .values,
+  .team,
+  .packages {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 940px) {
+  .page-hero {
+    padding: 44px 0 40px;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px 14px;
+  }
+
+  .service-detail,
+  .packages {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery--portfolio {
+    grid-auto-rows: 200px;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-hero h1 {
+    font-size: 25px;
+  }
+
+  .testimonials,
+  .values,
+  .team {
+    grid-template-columns: 1fr;
+  }
+
+  .stats {
+    padding: 24px 18px;
+  }
+
+  .stat strong {
+    font-size: 24px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-form {
+    padding: 22px 18px;
+  }
+
+  .price-table td {
+    padding: 12px 16px;
+    font-size: 13px;
+  }
+
+  .gallery--portfolio {
+    grid-auto-rows: 165px;
+  }
+
+  .map-card {
+    padding: 22px 20px;
+  }
+}
